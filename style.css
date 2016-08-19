@@ -28,13 +28,13 @@ body{
 	padding-top: 120px;
 	height: 100%;
 	width: 100%;
-	background-color: #FA5555;
 	position: absolute;
 	top:0;
 	left: 0;
 	z-index:5; 
-	background-color: rgba(255,255,255,0);
-	display: none;
+	background-image: url(img/bw.jpg);
+	background-size: cover;
+	opacity: 1;
 }
 
 .all{
@@ -51,6 +51,12 @@ body{
 	top:0;
 	z-index: 3;
 	text-align: center;
+	background-image: url("img/logo.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-color: rgba(255,255,255,0.8);
+	background-blend-mode:overlay;
 }
 
 #profile{
@@ -82,12 +88,20 @@ body{
 .left{
 	height: 100%;
 	width: 50%;
-	background-color: #000;
 	position: absolute;
 	top:0;
 	right: 0;
 	z-index: 3;
 	text-align: center;
+	background-color: #000;
+}
+
+.logo4{
+	background-image: url("img/logo04.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-color:rgba(0,0,0,1);
 }
 
 .left img{

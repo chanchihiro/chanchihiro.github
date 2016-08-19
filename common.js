@@ -28,7 +28,8 @@ $(function(){
 				"opacity":"1"
 			},duration);
 			$(".title").animate({
-				"z-index":"-10"
+				"z-index":"-10",
+				"opacity":"0"
 			},duration);
 
 			}
@@ -46,20 +47,53 @@ $(function(){
 			},duration);
 			});
 
-		//ロゴ3が上に移動
-		$("#logo3").animate({
-			"width":"45%",
-			"top":"-70%"
-		},duration,function(){
-			$("#saisho").css({
-				"opacity":"1"
-			});
-		});
 
-		//ボタンが消える
+		//ボタンとロゴが消える
 		$(this).hide(2000);
+		$("#logo3").hide();
 
 	});
+
+
+	//マウスの位置で変化
+
+	var $window = $(window);
+	var $left = $(".left");
+	var $right = $(".right");
+	var leftOffsetLeft = $left.offset().left;
+	var rightOffsetLeft = $right.offset().left;
+
+	$window.on("mouseover",function(e){
+		if(e.pageX > leftOffsetLeft){
+			$(".left").addClass("logo4").animate({
+				"width":"70%",
+			});
+			$(".right").animate({
+				"width":"30%"
+			});
+		}else{
+			$(".left").removeClass("logo4").animate({
+				"width":"30%"
+			});
+			$(".right").animate({
+				"width":"70%",
+				"background-color":"rgba(255,255,255,0.8)"
+			});
+		}
+	});
+
+	$(".title").on("mouseover",function(){
+			$(".left").css({
+				"width":"50%"
+			});
+			$(".right").css({
+				"width":"50%"
+			});
+	});
+
+
+
+
 
 
 	//プロフィール表示
