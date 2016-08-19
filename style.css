@@ -269,6 +269,14 @@ footer{
 	/*border: 1px solid #000;*/
 }
 
+.social a{
+	color: #000;
+}
+
+.social a:hover{
+	color: #b2513b;
+}
+
 #totop{
 	position: absolute;
 	top: 50%;
@@ -292,7 +300,7 @@ footer{
 
 .workinner{
 	position: absolute;
-	top: 0;
+	top: 73px;
 	bottom: 0;
 	right: 0;
 	left: 0;
