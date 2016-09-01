@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="words" content="ちゃんちー,野口千紘,学生,ポートフォリオ,法政,ライフイズテック">
+	<meta name="author" content="chanchi-">
+	<meta name="description" content="ちゃんちーのポートフォリオです。">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>chanchiweb</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<!-- jQuery読み込み -->
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="anime.min.js"></script>
+	<script src="js/profile.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82884916-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+	<canvas class="fireworks"></canvas>
+    <section>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="dot-js" fill="#FFFFFF" x="80" y="352" width="32" height="32" rx="16"></rect>
+        </g>
+    </section>
+
+    
+	<header id="header" class="">
+		<img src="img/profile.png" alt="">
+
+	</header><!-- /header -->
+
+	<div class="profile">
+		<div class="inner">
+			<h1 id="scroll">CHIHIRO NOGUCHI</h1>
+			<div class="prof">
+				<h2>Profile</h2 id="scroll">
+				<p>21歳。平成7年7月7日生まれ。<br>
+					法政大学社会学部メディア社会学科に所属。<br>
+					デザイン思考におけるデジタルメディアの研究を土橋ゼミで行っています。<br>
+					2015年からLife is Tech!でプログラミングとデザインを教えています。
+				</p>
+			</div>
+			<div class="skill">
+				<h2>Skill</h2>
+				<p>HTML5 / CSS3 / jQuery / JavaScript / Webアプリケーション /
+Photoshop / Illustrator / Monaca</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="toright" id="toright">
+		<a href="index.html"><img src="img/backpage.png" height="48" width="48" alt=""></a>
+	</div>
+    <div class="tobottom" id="arrow">
+    	<a href="#scroll"><img src="img/arrow_bottom.png" height="64" width="64" alt=""></a>
+    	<h2>CLICK</h2>
+    </div>
+
+    <div class="sns">
+    	<a href="https://twitter.com/chihirooo0707"><img src="img/twitter.png" height="32" width="32" alt=""></a><br>
+    	<a href="https://www.facebook.com/chanchihiro0707"><img src="img/facebook.png" height="32" width="32" alt=""></a><br>
+    	<a href="https://www.instagram.com/chanchihiro/"><img src="img/insta.png" height="32" width="32" alt=""></a><br>
+    </div>
+
+
+
+    <script>
+   // #で始まるアンカーをクリックした場合に処理
+   $('#arrow').click(function() {
+      // スクロールの速度
+      var speed = 1500; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $("#scroll");
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'linear');
+      return false;
+   });
+</script>
+
+
+
+
+</body>
+</html>
