@@ -1,3 +1,5 @@
+@media screen and (max-width:600px){
+
 @font-face{
 	font-family: kagakugo;
 	src:url("GN-KillGothic-U-KanaNB.ttf")format("opentype");
@@ -227,6 +229,9 @@ footer{
 	animation: swing 1s ease;
 	animation-iteration-count: 1;
 }
+
+
+} /*メディアクエリ終わり*/
 
 
 
