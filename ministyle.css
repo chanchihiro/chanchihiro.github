@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) and (max-width:960px) {
+@media screen and (max-width:600px){
 
 @font-face{
 	font-family: kagakugo;
@@ -46,8 +46,8 @@ body{
 }
 
 .right{
-	height: 100%;
-	width: 50%;
+	height: 50%;
+	width: 100%;
 	background-color: #fff;
 	position: absolute;
 	top:0;
@@ -82,11 +82,11 @@ body{
 }
 
 .left{
-	height: 100%;
-	width: 50%;
+	height: 50%;
+	width: 100%;
 	background-color: #000;
 	position: absolute;
-	top:0;
+	bottom:0;
 	right: 0;
 	z-index: 3;
 	text-align: center;
