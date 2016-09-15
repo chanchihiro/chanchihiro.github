@@ -1,9 +1,10 @@
-@media screen and (max-width:600px) and (min-width: 960px){
+@media screen and (min-width:600px) and (max-width: 960px){
 
 @font-face{
-	font-family: kagakugo;
-	src:url("GN-KillGothic-U-KanaNB.ttf")format("opentype");
+	font-family: mc;
+	src :url(mplus/mplus-1c-thin.ttf)format("opentype");
 }
+
 
 *{
 	padding: 0;
@@ -19,24 +20,12 @@ body{
 	overflow: hidden;
 }
 
-.wrapper{
-	width: 100%;
-	height: 100%;
-	position: relative;
+.title{
+	display: none;
 }
 
-.title{
-	text-align: center;
-	padding-top: 120px;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top:-80px;
-	left: 0;
-	z-index:5; 
-	background-image: url(img/bw.jpg);
-	background-size: cover;
-	opacity: 1;
+.title button{
+	display: none;
 }
 
 .all{
@@ -46,8 +35,8 @@ body{
 }
 
 .right{
-	height: 100%;
-	width: 50%;
+	height: 50%;
+	width: 100%;
 	background-color: #fff;
 	position: absolute;
 	top:0;
@@ -69,7 +58,6 @@ body{
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	opacity: 0;
 	z-index: 5;
 	transition: all 1s ease;
 	cursor: pointer;
@@ -85,13 +73,14 @@ body{
 	margin: auto;
 	z-index: 10;
 	opacity: 0;
+	display: none;
 }
 
 .left{
-	height: 100%;
-	width: 50%;
+	height: 50%;
+	width: 100%;
 	position: absolute;
-	top:0;
+	bottom:0;
 	right: 0;
 	z-index: 3;
 	text-align: center;
@@ -114,7 +103,6 @@ body{
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	opacity: 0;
 	z-index: 5;
 	transition: all 1s ease;
 	cursor: pointer;
@@ -124,6 +112,7 @@ body{
 	width: 100%;
 	height: 80%;
 	margin: auto;
+	display: none;
 }
 
 #logo1{
@@ -180,9 +169,11 @@ footer{
 	color: #fff;
 	position: absolute;
 	bottom: 0;
-	right: 5%;
+	width: 100%;
 	font-size: 16px;
-	letter-spacing: 0;
+	letter-spacing: 0.6px;
+	text-align: center;
+	font-family: mc;
 }
 
 
@@ -229,8 +220,6 @@ footer{
 	animation: swing 1s ease;
 	animation-iteration-count: 1;
 }
-
-
 
 }
 

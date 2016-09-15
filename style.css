@@ -1,8 +1,8 @@
 @media screen and (min-width:960px){
 
 @font-face{
-	font-family: kagakugo;
-	src:url("GN-KillGothic-U-KanaNB.ttf")format("opentype");
+	font-family: mc;
+	src :url(mplus/mplus-1c-thin.ttf)format("opentype");
 }
 
 *{
