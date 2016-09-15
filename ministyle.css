@@ -1,9 +1,10 @@
 @media screen and (max-width:600px){
 
 @font-face{
-	font-family: kagakugo;
-	src:url("GN-KillGothic-U-KanaNB.ttf")format("opentype");
+	font-family: mc;
+	src :url(mplus/mplus-1c-thin.ttf)format("opentype");
 }
+
 
 *{
 	padding: 0;
@@ -170,9 +171,11 @@ footer{
 	color: #fff;
 	position: absolute;
 	bottom: 0;
-	right: 5%;
+	width: 100%;
 	font-size: 16px;
-	letter-spacing: 0;
+	letter-spacing: 0.6px;
+	text-align: center;
+	font-family: mc;
 }
 
 
