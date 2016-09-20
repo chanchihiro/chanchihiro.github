@@ -1,4 +1,4 @@
-@media screen and (min-width:960px){
+@media screen and (max-width:600px){
 
 @font-face{
 	font-family: mc;
@@ -16,15 +16,15 @@ header{
 	background-color: rgba(255,255,255,0.3);
 	background-image: url(img/meme.jpg);
 	-webkit-background-size: cover;
-	background-size: 110%;
-	background-position: -135px 0px;
+	background-size: 250%;
+	background-position: 60% -50px;
 	background-blend-mode:overlay;
 	/*background-attachment:fixed;*/
 }
 
 header img{
 	margin-top: 50px;
-	width: 70%;
+	width: 90%;
 }
 
 .profile{
@@ -156,3 +156,4 @@ header img{
 }
 
 }
+
