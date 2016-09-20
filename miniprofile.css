@@ -34,7 +34,7 @@ header{
 }
 
 header img{
-	margin-top: 65px;
+	margin-top: 20px;
 	width: 90%;
 }
 
@@ -47,11 +47,10 @@ header img{
 
 .inner{
 	font-family: mc;
-	margin-top: 50px;
 }
 
 .inner h1{
-	font-size: 18px;
+	font-size: 10px;
 	letter-spacing: 5px;
 	border: 1px solid #000;
 	width: 80%;
