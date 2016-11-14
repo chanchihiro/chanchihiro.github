@@ -8,20 +8,20 @@ $(function(){
 	$window.on("scroll",function(){
 
 		///////////ロゴ
-		if($window.scrollTop() > logoOffsetTop - 200 ){
+		if($window.scrollTop() > logoOffsetTop - 1000 ){
 			$(".m1").animate({
 				"right" : 0
-			},1800);
+			},2500);
 		}
-		if($window.scrollTop() > textOffsetTop - 250 ){
+		if($window.scrollTop() > textOffsetTop - 1000 ){
 			$(".m2").animate({
 				"right" : 0
-			},1800);
+			},2500);
 		}
-		if($window.scrollTop() > imgOffsetTop - 300 ){
+		if($window.scrollTop() > imgOffsetTop - 1000 ){
 			$(".m3").animate({
 				"left" : 0
-			},1800);
+			},2500);
 		}
 
 
