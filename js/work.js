@@ -8,17 +8,17 @@ $(function(){
 	$window.on("scroll",function(){
 
 		///////////ロゴ
-		if($window.scrollTop() > logoOffsetTop - 1200 ){
+		if($window.scrollTop() > logoOffsetTop - 200 ){
 			$(".m1").animate({
 				"right" : 0
 			},1800);
 		}
-		if($window.scrollTop() > textOffsetTop - 1000 ){
+		if($window.scrollTop() > textOffsetTop - 250 ){
 			$(".m2").animate({
 				"right" : 0
 			},1800);
 		}
-		if($window.scrollTop() > imgOffsetTop - 900 ){
+		if($window.scrollTop() > imgOffsetTop - 300 ){
 			$(".m3").animate({
 				"left" : 0
 			},1800);
