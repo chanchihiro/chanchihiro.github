@@ -133,6 +133,16 @@ main{
 	float: left;
 	width: 480px;
 	text-align: center;
+	position: relative;
+}
+
+#ba{
+	background-color: rgba(0,0,0,0);
+	width: 300px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	opacity:0;
 }
 
 .wleft img{
@@ -141,7 +151,7 @@ main{
 }
 
 .wleft img:hover{
-	background-color: #fff;
+	background-color: #888;
 }
 
 .wright{
@@ -149,6 +159,16 @@ main{
 	width: 480px;
 	text-align: center;
 	border-radius: 50%;
+	position: relative;
+}
+
+#baa{
+	background-color: rgba(0,0,0,0);
+	width: 250px;
+	position: absolute;
+	bottom: 50px;
+	right: 30px;
+	opacity: 0;
 }
 
 .wright img{
@@ -156,7 +176,7 @@ main{
 }
 
 .wright img:hover{
-	background-color: #fff;
+	background-color: #888;
 }
 
 .toright{

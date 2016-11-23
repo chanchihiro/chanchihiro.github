@@ -1,106 +1,50 @@
 $(function(){
 
-	var $window = $(window);
-	var logoOffsetTop = $("#logotext").offset().top;
-	var textOffsetTop = $(".m2").offset().top;
-	var imgOffsetTop = $(".m3").offset().top;
+	var baa = function(){
+		$("#ba").stop().animate({
+		opacity: -10
+		});
+	};
+	var baba = function(){
+		$("#ba").stop().animate({
+		top: "0px",
+		right: "0px"
+		});
+	};
 
-	$window.on("scroll",function(){
-
-		///////////ロゴ
-		if($window.scrollTop() > logoOffsetTop - 700 ){
-			$(".m1").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > textOffsetTop - 700 ){
-			$(".m2").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > imgOffsetTop - 700 ){
-			$(".m3").animate({
-				"left" : 0
-			},1000);
-		}
-
-
+	var aaa = function(){
+		$("#baa").stop().animate({
+		opacity: -10
+		});
+	};
+	var caca = function(){
+		$("#baa").stop().animate({
+		bottom: "0px",
+		right: "0px"
+		});
+	};
 
 
-
-		//////////イラスト
-		if($window.scrollTop() > $(".m4").offset().top - 700 ){
-			$(".m4").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m5").offset().top - 700 ){
-			$(".m5").animate({
-				"left" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m6").offset().top - 700 ){
-			$(".m6").animate({
-				"left" : 0
-			},1000);
-		}
-
-
-
-		///サイト
-		if($window.scrollTop() > $(".m7").offset().top - 700 ){
-			$(".m7").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m8").offset().top - 700 ){
-			$(".m8").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m9").offset().top - 700 ){
-			$(".m9").animate({
-				"left" : 0
-			},1000);
-		}
-
-
-
-
-		////アプリケーション
-		if($window.scrollTop() > $(".m10").offset().top - 700 ){
-			$(".m10").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m11").offset().top - 700 ){
-			$(".m11").animate({
-				"left" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m12").offset().top - 700 ){
-			$(".m12").animate({
-				"left" : 0
-			},1000);
-		}
-
-
-
-		///マガジン
-		if($window.scrollTop() > $(".m13").offset().top - 700 ){
-			$(".m13").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m14").offset().top - 700 ){
-			$(".m14").animate({
-				"right" : 0
-			},1000);
-		}
-		if($window.scrollTop() > $(".m15").offset().top - 700 ){
-			$(".m15").animate({
-				"left" : 0
-			},1000);
-		}
+	$("#kako").stop().mouseenter(function(){
+		$("#ba").stop().animate({
+			opacity: 1,
+			top: "-50px",
+			right: "-50px"
+		},300, function() {
+			setTimeout(baa,150);
+			setTimeout(baba,300);
+		});
 	});
+	$("#behance").mouseenter(function(){
+		$("#baa").animate({
+			opacity: 1,
+			bottom: "50px",
+			right: "30px"
+		},200, function() {
+			setTimeout(aaa,150);
+			setTimeout(caca,300);
+		});
+	});
+
+
 });
