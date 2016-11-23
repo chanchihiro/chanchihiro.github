@@ -3,6 +3,11 @@
 	src :url(mplus/mplus-1c-thin.ttf)format("opentype");
 }
 
+@font-face{
+	font-family: kana;
+	src :url(GenJyuuGothicX-P-Heavy.ttf)format("opentype");
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -18,6 +23,7 @@ body{
 	background-attachment:fixed;
 	font-family: mc;
 	font-weight: normal;
+	color: #fff;
 }
 
 header{
@@ -109,12 +115,18 @@ main{
 
 .link{
 	width: 100%;
-	height: 600px;
+	height: 100vh;
+	background-color: #000;
+	color: #fff;
 }
 
 .link h4{
-	color: #000;
-	font-size: 20px;
+	color: #fff;
+	font-weight: normal;
+	padding-top: 8px;
+	font-size: 30px;
+	font-family: kana;
+	letter-spacing: 3px;
 }
 
 .wleft{
@@ -125,6 +137,7 @@ main{
 
 .wleft img{
 	border-radius: 50%;
+	background-color: #fff;
 }
 
 .wleft img:hover{
@@ -138,6 +151,9 @@ main{
 	border-radius: 50%;
 }
 
+.wright img{
+	background-color: #fff;
+}
 
 .wright img:hover{
 	background-color: #fff;
@@ -149,6 +165,7 @@ main{
 	padding: 20px;
 	cursor: pointer;
 	z-index: 30;
+	color: #fff;
 }
 
 
