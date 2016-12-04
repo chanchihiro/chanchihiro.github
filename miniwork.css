@@ -1,4 +1,4 @@
-@media screen and (min-width:700px){
+@media screen and (max-width:700px){
 
 @font-face{
 	font-family: mc;
@@ -19,8 +19,8 @@ body{
 	background-color: rgba(0,0,0,0.6);
 	background-image: url(img/me.jpg);
 	-webkit-background-size: cover;
-	background-size: 100%;
-	/*background-position: center top;*/
+	background-size: 200%;
+	background-position: top center;
 	background-blend-mode:overlay;
 	background-attachment:fixed;
 	font-family: mc;
@@ -31,31 +31,28 @@ body{
 header{
 	text-align: center;
 	height: 100vh;
+	text-align: center;
 }
 
 header img{
-	margin-top: 50px;
-	width: 70%;
+	padding-top: 100px;
+	width: 100%;
 }
 
 main{
 	background-color: #000;
 	width: 100%;
-	min-width: 960px;
 }
 
 .container{
-	width: 960px;
+	width: 100%;
 	margin:0 auto;
-	padding-top: 150px;
+	padding-top: 100px;
 	color: #fff;
 	overflow: hidden;
+	text-align: center;
 }
 
-.work{
-	height: 500px;
-	margin-bottom: 30px;
-}
 
 .work h2,h3{
 	font-weight: normal;
@@ -79,17 +76,7 @@ main{
 
 .textbox{
 	width: 460px;
-	float: left;
 	margin-right: 40px;
-}
-
-.imgbox{
-	width: 460px;
-	float: left;
-}
-
-.imgbox img{
-	width: 460px;
 }
 
 .m1,.m2,.m4,.m7,.m8,.m10,.m13,.m14{
@@ -117,7 +104,6 @@ main{
 
 .link{
 	width: 100%;
-	height: 100vh;
 	background-color: #000;
 	color: #fff;
 }
@@ -132,10 +118,10 @@ main{
 }
 
 .wleft{
-	float: left;
-	width: 480px;
+	width: 90%;
+	margin: 0 auto;
 	text-align: center;
-	position: relative;
+	margin-bottom: 50px;
 }
 
 #ba{
@@ -145,11 +131,13 @@ main{
 	top: 0px;
 	right: 0px;
 	opacity:0;
+	display: none;
 }
 
 .wleft img{
 	border-radius: 50%;
 	background-color: #fff;
+	text-align: center;
 }
 
 .wleft img:hover{
@@ -157,11 +145,11 @@ main{
 }
 
 .wright{
-	float: left;
-	width: 480px;
+	width: 90%;
+	margin: 0 auto;
 	text-align: center;
 	border-radius: 50%;
-	position: relative;
+	margin-bottom: 50px;
 }
 
 #baa{
@@ -171,6 +159,7 @@ main{
 	bottom: 50px;
 	right: 30px;
 	opacity: 0;
+	display: none;
 }
 
 .wright img{
@@ -190,5 +179,5 @@ main{
 	color: #fff;
 }
 
-
 }
+
