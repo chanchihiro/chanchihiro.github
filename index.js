@@ -22,7 +22,19 @@ class Blog extends React.Component {
 				console.error(this.props.url, status, err.toString());
 			}
 		});
-	}	
+	}
+
+	componentDidMount() {
+		this.loadAjax();
+	}
+
+	render(){
+		return(
+			<div className='embedblog'>
+				{this.props.author}
+			</div>
+		);
+	}
 }
 
 

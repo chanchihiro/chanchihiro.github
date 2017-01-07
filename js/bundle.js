@@ -53,6 +53,20 @@ var Blog = function (_React$Component) {
 				}
 			});
 		}
+	}, {
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			this.loadAjax();
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'embedblog' },
+				this.props.author
+			);
+		}
 	}]);
 
 	return Blog;
